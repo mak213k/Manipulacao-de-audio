@@ -1,17 +1,31 @@
 import re
 import pyttsx3
+import shutil
 from pypdf import PdfReader
+import os
+
 
 # =====================================================
 # Configurações
 # =====================================================
 
-NOME_PDF = "Pag35_Aurélien Géron - Mãos à Obra_ Aprendizado de Máquina com Scikit-Learn & TensorFlow (2019).pdf"
-ARQUIVO_SAIDA = "livro_final"
+# NOME_PDF = "morte_de_ivan_Ilitch"
+NOME_PDF = "2007_UNCAC_Port"
+
+if not os.path.exists("environment/"+NOME_PDF):
+    os.mkdir("environment/"+NOME_PDF)
+
+
+
+
+ARQUIVO_SAIDA = "environment/"+NOME_PDF+"/"+NOME_PDF+".pdf"
+
+NOME_PDF = NOME_PDF+".pdf"
+
 
 VELOCIDADE = 145
 VOLUME = 1.0
-MAX_CARACTERES = 2800
+MAX_CARACTERES = 28000
 
 # =====================================================
 # Inicialização
@@ -90,6 +104,8 @@ print("Extraindo texto...")
 
 reader = PdfReader(NOME_PDF)
 
+
+
 texto = ""
 
 for pagina in reader.pages:
@@ -151,5 +167,9 @@ for indice, bloco in enumerate(blocos):
 
 engine.runAndWait()
 engine.stop()
+
+print("Concluído gravação.")
+
+shutil.move(NOME_PDF, ARQUIVO_SAIDA)
 
 print("Concluído.")

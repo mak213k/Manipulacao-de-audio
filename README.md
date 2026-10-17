@@ -1,5 +1,3 @@
-Mayko, aqui está o README completo atualizado com as tarefas que os três scripts realizam e que não estavam documentadas.
-
 <artifact id="readme-pdf-to-speech" type="markdown" title="README - PDF to Speech (atualizado)">
 # 📚 PDF to Speech
 

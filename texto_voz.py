@@ -10,7 +10,7 @@ import os
 # =====================================================
 
 # NOME_PDF = "morte_de_ivan_Ilitch"
-NOME_PDF = "mindset-a-nova-psicologia-do-sucesso"
+NOME_PDF = "A-Jornada-do-Herói-PDF"
 
 if not os.path.exists("environment/"+NOME_PDF):
     os.mkdir("environment/"+NOME_PDF)
@@ -20,7 +20,7 @@ if not os.path.exists("environment/"+NOME_PDF):
 
 ARQUIVO_SAIDA = "environment/"+NOME_PDF+"/"+NOME_PDF+".pdf"
 
-NOME_PDF = NOME_PDF+".pdf"
+NOME_PDF = "novos/"+NOME_PDF+".pdf"
 
 
 VELOCIDADE = 145

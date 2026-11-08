@@ -128,6 +128,8 @@ Arquivos WAV
 ├── texto_voz_2.py         # Etapa 2: converte .txt em áudio (preserva o original)
 ├── texto_voz.py           # Versão original: PDF → WAV em um único script
 ├── livro_extraido.txt     # Texto extraído (gerado pela Etapa 1)
+├── environment     # Diretório onde fica os arquivos dos audiolivros de saída.
+├── novos     # Diretório onde fica os arquivos dos livros em pdf de entrada.
 ├── README.md
 └── .gitignore
 ```

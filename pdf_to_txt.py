@@ -5,8 +5,8 @@ from pypdf import PdfReader
 # Configurações
 # =====================================================
 
-NOME_PDF = "Mundo_Assombrado_pelos_Demonios_Carl_Sagan.pdf"
-ARQUIVO_TXT = "livro_extraido.txt"
+NOME_PDF = "43-Paz_e_Guerra_entre_as_Nacoes.pdf"
+ARQUIVO_TXT = "43-Paz_e_Guerra_entre_as_Nacoes.txt"
 
 # =====================================================
 # Extração do texto

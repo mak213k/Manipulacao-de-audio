@@ -10,7 +10,7 @@ import os
 # =====================================================
 
 # NOME_PDF = "morte_de_ivan_Ilitch"
-NOME_PDF = "2007_UNCAC_Port"
+NOME_PDF = "mindset-a-nova-psicologia-do-sucesso"
 
 if not os.path.exists("environment/"+NOME_PDF):
     os.mkdir("environment/"+NOME_PDF)
